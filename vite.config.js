@@ -5,7 +5,7 @@ import path from 'path'
 
 export default defineConfig({
   // Use your repository name as base path for GitHub Pages
-  base: '/portfolio-website/',
+  base: '/',
   
   plugins: [react(), tailwindcss()],
   resolve: {
