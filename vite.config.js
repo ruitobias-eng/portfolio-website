@@ -4,9 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 import path from 'path'
 
 export default defineConfig({
-  // Use your repository name as base path for GitHub Pages
-  base: '/',
-  
+  base: '/', // raiz do domínio para Custom Domain
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
@@ -18,7 +16,6 @@ export default defineConfig({
     sourcemap: false,
     chunkSizeWarningLimit: 1000,
   },
-  // Optional: Preview configuration
   preview: {
     port: 4173,
     host: true
