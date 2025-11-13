@@ -1,4 +1,4 @@
-# Deploy React + Vite app to GitHub Pages
+# .github/workflows/deploy.yml
 name: Deploy Vite App to GitHub Pages
 
 on:
@@ -23,25 +23,40 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 1️⃣ Checkout code
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # 2️⃣ Setup Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
+      # 3️⃣ Cache npm dependencies
+      - name: Cache npm
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      # 4️⃣ Install dependencies
       - name: Install dependencies
         run: npm ci
 
+      # 5️⃣ Build Vite app
       - name: Build Vite app
         run: npm run build
 
+      # 6️⃣ Upload build output
       - name: Upload build output
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
 
+      # 7️⃣ Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
