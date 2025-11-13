@@ -4,12 +4,23 @@ import tailwindcss from '@tailwindcss/vite'
 import path from 'path'
 
 export default defineConfig({
-  // base: '/portfolio-website/', ❌ Remover ou substituir por '/'
-  base: '/',
+  // Use your repository name as base path for GitHub Pages
+  base: '/portfolio-website/',
+  
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    outDir: 'dist',
+    sourcemap: false,
+    chunkSizeWarningLimit: 1000,
+  },
+  // Optional: Preview configuration
+  preview: {
+    port: 4173,
+    host: true
+  }
 })
