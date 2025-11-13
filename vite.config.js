@@ -4,8 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 import path from 'path'
 
 export default defineConfig({
-  // base: '/portfolio-website/', ❌ Remover ou substituir por '/'
-  base: '/',
+  base: '/portfolio-website/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
