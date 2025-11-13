@@ -4,11 +4,12 @@ import tailwindcss from '@tailwindcss/vite'
 import path from 'path'
 
 export default defineConfig({
-  base: '/portfolio-website/',  // ✅ correto para GitHub Pages
-  plugins: [react(), tailwindcss()], // ✅ integração React + Tailwind
+  // base: '/portfolio-website/', ❌ Remover ou substituir por '/'
+  base: '/',
+  plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"), // ✅ bom atalho de importação
+      "@": path.resolve(__dirname, "./src"),
     },
   },
 })
