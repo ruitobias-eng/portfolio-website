@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 import path from 'path'
 
 export default defineConfig({
-  base: '/', // raiz do domínio para Custom Domain
+  base: '/portfolio-website/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
