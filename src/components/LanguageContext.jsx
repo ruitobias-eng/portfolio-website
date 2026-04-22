@@ -143,7 +143,7 @@ const translations = {
       company: 'Empresa',
       companyList: ['Equipe', 'Contato'],
       contactTitle: 'Contato',
-      rights: '© 2025 Rui & Rodrigo. Todos os direitos reservados.'
+      rights: '© 2026 Rui & Rodrigo. Todos os direitos reservados.'
     }
   },
   en: {
@@ -288,7 +288,7 @@ const translations = {
       company: 'Company',
       companyList: ['Team', 'Contact'],
       contactTitle: 'Contact',
-      rights: '© 2025 Rui & Rodrigo. All rights reserved.'
+      rights: '© 2026 Rui & Rodrigo. All rights reserved.'
     }
   },
   es: {
@@ -433,7 +433,7 @@ const translations = {
       company: 'Empresa',
       companyList: ['Equipo', 'Contacto'],
       contactTitle: 'Contacto',
-      rights: '© 2025 Rui & Rodrigo. Todos los derechos reservados.'
+      rights: '© 2026 Rui & Rodrigo. Todos los derechos reservados.'
     }
   }
 };
