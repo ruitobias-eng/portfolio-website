@@ -131,7 +131,7 @@ const translations = {
       }
     },
     footer: {
-      description: 'Especialista em engenharia de automação e Indústria 4.0, transformando desafios em soluções inteligentes.',
+      description: 'Especialista em Engenharia 5.0 e Indústria 5.0, transformando desafios complexos em soluções inteligentes e humanas.',
       services: 'Serviços',
       servicesList: [
         'Automação de Processos',
@@ -276,7 +276,7 @@ const translations = {
       }
     },
     footer: {
-      description: 'Specialist in automation engineering and Industry 4.0, transforming challenges into intelligent solutions.',
+      description: 'Specialist in Engineering 5.0 and Industry 5.0, transforming complex challenges into intelligent and human-centric solutions.',
       services: 'Services',
       servicesList: [
         'Process Automation',
@@ -421,7 +421,7 @@ const translations = {
       }
     },
     footer: {
-      description: 'Especialista en ingeniería de automatización e Industria 4.0, transformando desafíos en soluciones inteligentes.',
+      description: 'Especialista en Ingeniería 5.0 e Industria 5.0, transformando desafíos complejos en soluciones inteligentes y humanas.',
       services: 'Servicios',
       servicesList: [
         'Automatización de Procesos',
