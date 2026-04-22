@@ -24,7 +24,7 @@ export default function Services() {
       bgSection: 'bg-white',
       bgCard: 'bg-gray-100',
       borderCard: 'border-gray-300',
-      textMain: 'text-gray-800',
+      textMain: '#000000',
       textSecondary: 'text-gray-600',
       accentText: 'text-yellow-600',
     },

@@ -15,7 +15,7 @@ export default function Team() {
       bgSection: "bg-white",
       bgCard: "bg-gray-100",
       borderCard: "border-gray-300",
-      textMain: "text-gray-800",
+      textMain: "#000000",
       textSecondary: "text-gray-600",
       accentText: "text-yellow-600",
       glow: "bg-yellow-400/20 blur-3xl",
