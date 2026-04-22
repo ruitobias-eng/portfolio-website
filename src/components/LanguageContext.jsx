@@ -11,11 +11,19 @@ const translations = {
       quote: 'Solicitar Orçamento'
     },
     hero: {
+<<<<<<< HEAD
+=======
+      engineering: 'Engenharia 5.0',
+>>>>>>> 3faf164 (feat: implementando traduções e componente Hero)
       tagline: 'Soluções em Engenharia, Automação e Computação',
       description: 'Inovação e inteligência aplicadas à indústria, sistemas e TI.',
       ctaServices: 'Conheça Nossos Serviços',
       ctaProjects: 'Ver Projetos',
+<<<<<<< HEAD
       industry: 'INDÚSTRIA 4.0',
+=======
+      industry: 'INDÚSTRIA 5.0',
+>>>>>>> 3faf164 (feat: implementando traduções e componente Hero)
       projects: 'Projetos',
       automation: 'Automação'
     },
@@ -155,11 +163,19 @@ const translations = {
       quote: 'Request Quote'
     },
     hero: {
+<<<<<<< HEAD
+=======
+      engineering: 'Engineering 5.0',
+>>>>>>> 3faf164 (feat: implementando traduções e componente Hero)
       tagline: 'Engineering, Automation and Computing Solutions',
       description: 'Innovation and intelligence applied to industry, systems and IT.',
       ctaServices: 'Discover Our Services',
       ctaProjects: 'View Projects',
+<<<<<<< HEAD
       industry: 'INDUSTRY 4.0',
+=======
+      industry: 'INDUSTRY 5.0',
+>>>>>>> 3faf164 (feat: implementando traduções e componente Hero)
       projects: 'Projects',
       automation: 'Automation'
     },
@@ -299,11 +315,19 @@ const translations = {
       quote: 'Solicitar Presupuesto'
     },
     hero: {
+<<<<<<< HEAD
+=======
+      engineering: 'Ingeniería 5.0',
+>>>>>>> 3faf164 (feat: implementando traduções e componente Hero)
       tagline: 'Soluciones en Ingeniería, Automatización y Computación',
       description: 'Innovación e inteligencia aplicadas a la industria, sistemas y TI.',
       ctaServices: 'Conozca Nuestros Servicios',
       ctaProjects: 'Ver Proyectos',
+<<<<<<< HEAD
       industry: 'INDUSTRIA 4.0',
+=======
+      industry: 'INDUSTRIA 5.0',
+>>>>>>> 3faf164 (feat: implementando traduções e componente Hero)
       projects: 'Proyectos',
       automation: 'Automatización'
     },
