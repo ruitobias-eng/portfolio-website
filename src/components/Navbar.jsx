@@ -11,11 +11,19 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  // 🌍 Detectar preferência do sistema no carregamento inicial
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
+
+    // Se o tema for 'system' ou estiver vazio, define com base no navegador
+    if (!theme || theme === 'system') {
+      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      setTheme(systemTheme);
+    }
+
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [theme, setTheme]);
 
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
@@ -33,7 +41,7 @@ export default function Navbar() {
     { label: t.nav.contact, id: "contato" },
   ];
 
-  // 🌓 Ajuste Fino: Alterna apenas entre light e dark
+  // 🌓 Alterna estritamente entre light e dark
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
@@ -101,7 +109,6 @@ export default function Navbar() {
             <div className="flex items-center gap-4 pl-4 border-l border-border">
               <LanguageSwitcher />
 
-              {/* Botão de Tema Simplificado */}
               <button
                 onClick={toggleTheme}
                 title={theme === "light" ? "Mudar para modo escuro" : "Mudar para modo claro"}
@@ -156,7 +163,7 @@ export default function Navbar() {
                   className={`p-3 rounded-xl transition-all duration-300 ${styles.themeButton} flex items-center gap-2`}
                 >
                   {themeIcon()}
-                  <span className="text-sm font-medium capitalize">
+                  <span className="text-sm font-medium">
                     {theme === 'light' ? 'Escuro' : 'Claro'}
                   </span>
                 </button>
