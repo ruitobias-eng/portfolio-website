@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Menu, X, Sun, Moon, Laptop } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/components/LanguageContext";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
@@ -33,40 +33,27 @@ export default function Navbar() {
     { label: t.nav.contact, id: "contato" },
   ];
 
-  const cycleTheme = () => {
-    if (theme === "light") setTheme("dark");
-    else if (theme === "dark") setTheme("system");
-    else setTheme("light");
+  // 🌓 Ajuste Fino: Alterna apenas entre light e dark
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
   };
 
   const themeIcon = () => {
-    if (theme === "light") return <Sun className="w-5 h-5" />;
-    if (theme === "dark") return <Moon className="w-5 h-5" />;
-    return <Laptop className="w-5 h-5" />;
+    return theme === "light" ? <Moon className="w-5 h-5" /> : <Sun className="w-5 h-5" />;
   };
 
-  // 🎨 Estilos simplificados com melhor contraste
   const getNavStyles = (isScrolled) => {
     return {
-      // Background e bordas
       bg: isScrolled
         ? "bg-background/95 backdrop-blur-lg border-b border-border shadow-lg"
         : "bg-background/80 backdrop-blur-md",
       mobileBg: "bg-background border border-border",
-      
-      // Textos com melhor contraste
       text: "text-foreground font-semibold",
       textSecondary: "text-muted-foreground",
-      
-      // Interações
       linkHover: "hover:text-accent hover:scale-105",
       buttonHover: "hover:bg-accent/90",
-      
-      // Botões
       themeButton: "bg-background border border-border hover:bg-accent hover:text-accent-foreground",
       ctaButton: "bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg",
-      
-      // Efeitos
       logoContainer: "bg-accent/15 hover:bg-accent/20",
       hoverBg: "hover:bg-accent/15"
     };
@@ -78,7 +65,7 @@ export default function Navbar() {
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${styles.bg}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          {/* Logo - Sem fundo amarelo, melhor contraste */}
+          {/* Logo DibiTech */}
           <div
             className={`flex items-center gap-3 cursor-pointer transition-all duration-300 ${styles.logoContainer} rounded-2xl px-4 py-2`}
             onClick={() => scrollToSection("inicio")}
@@ -98,7 +85,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* Menu Desktop - Melhor contraste e espaçamento */}
+          {/* Menu Desktop */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <button
@@ -111,13 +98,13 @@ export default function Navbar() {
               </button>
             ))}
 
-            {/* Controles */}
             <div className="flex items-center gap-4 pl-4 border-l border-border">
               <LanguageSwitcher />
 
+              {/* Botão de Tema Simplificado */}
               <button
-                onClick={cycleTheme}
-                title={`Tema atual: ${theme}`}
+                onClick={toggleTheme}
+                title={theme === "light" ? "Mudar para modo escuro" : "Mudar para modo claro"}
                 className={`p-3 rounded-xl transition-all duration-300 ${styles.themeButton}`}
               >
                 {themeIcon()}
@@ -132,7 +119,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* Menu Mobile - Melhor visibilidade */}
+          {/* Mobile Toggle */}
           <button
             className={`md:hidden p-3 rounded-xl border border-border bg-background hover:bg-accent hover:text-accent-foreground transition-all duration-200`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -141,7 +128,7 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Menu Mobile Expandido - Melhor contraste */}
+        {/* Menu Mobile */}
         {isMobileMenuOpen && (
           <div className={`md:hidden ${styles.mobileBg} rounded-xl mt-2 p-6 shadow-2xl backdrop-blur-lg transition-all duration-300`}>
             <div className="space-y-3">
@@ -165,12 +152,13 @@ export default function Navbar() {
               <div className="flex items-center justify-between px-2">
                 <span className={`text-sm ${styles.textSecondary}`}>Tema:</span>
                 <button
-                  onClick={cycleTheme}
-                  title={`Tema atual: ${theme}`}
+                  onClick={toggleTheme}
                   className={`p-3 rounded-xl transition-all duration-300 ${styles.themeButton} flex items-center gap-2`}
                 >
                   {themeIcon()}
-                  <span className="text-sm font-medium capitalize">{theme}</span>
+                  <span className="text-sm font-medium capitalize">
+                    {theme === 'light' ? 'Escuro' : 'Claro'}
+                  </span>
                 </button>
               </div>
 

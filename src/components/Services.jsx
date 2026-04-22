@@ -17,25 +17,25 @@ export default function Services() {
     'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e02bfb1dd3ddcbb6543743/92f3583e8_delivery.png'
   ];
 
-  // 🎨 Cores por tema (mesmo padrão Contact/Team)
+ // 🎨 Cores por tema (Otimizadas para contraste máximo)
   const colorsByTheme = {
     light: {
-      primary: '#FACC15',       // destaque amarelo
+      primary: '#FACC15',       
       bgSection: 'bg-white',
       bgCard: 'bg-gray-100',
-      borderCard: 'border-gray-300',
+      borderCard: 'border-gray-200',
       textMain: '#000000',
-      textSecondary: 'text-gray-600',
-      accentText: 'text-yellow-600',
+      textSecondary: 'text-gray-700',
+      accentText: 'text-[#FACC15]',
     },
     dark: {
       primary: '#FACC15',
       bgSection: 'bg-black',
       bgCard: 'bg-zinc-900',
       borderCard: 'border-zinc-800',
-      textMain: 'text-white',
-      textSecondary: 'text-gray-300',
-      accentText: 'text-yellow-400',
+      textMain: '#FFFFFF',
+      textSecondary: '#D1D5DB',
+      accentText: '#FDE047',
     },
   };
 

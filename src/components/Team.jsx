@@ -8,27 +8,27 @@ export default function Team() {
   const { t } = useLanguage();
   const { theme } = useTheme();
 
-  // 🎨 Paletas de cores por tema (mesmo padrão do Contact.jsx)
+  // 🎨 Paletas de cores por tema (Otimizadas para legibilidade técnica)
   const colorsByTheme = {
     light: {
-      primary: "#FACC15",       // destaque amarelo
+      primary: "#FACC15",       
       bgSection: "bg-white",
       bgCard: "bg-gray-100",
-      borderCard: "border-gray-300",
-      textMain: "#000000",
-      textSecondary: "text-gray-600",
-      accentText: "text-yellow-600",
-      glow: "bg-yellow-400/20 blur-3xl",
+      borderCard: "border-gray-200", // Mais suave para um look clean
+      textMain: "#000000",       // Preto puro para contraste máximo
+      textSecondary: "text-gray-700",
+      accentText: "text-[#FACC15]",  // Hex puro para evitar o tom laranja
+      glow: "bg-yellow-400/10 blur-3xl",
     },
     dark: {
-      primary: "#FACC15",       // destaque amarelo
-      bgSection: "bg-gradient-to-b from-black via-zinc-900 to-black",
+      primary: "#FACC15",       
+      bgSection: "bg-black",     // Preto sólido ajuda o texto branco a "saltar" da tela
       bgCard: "bg-zinc-900",
       borderCard: "border-zinc-800",
-      textMain: "text-white",
-      textSecondary: "text-gray-300",
-      accentText: "text-yellow-400",
-      glow: "bg-yellow-400/20 blur-3xl",
+      textMain: "#FFFFFF",        // Branco puro em Hex para máxima nitidez no dark
+      textSecondary: "#D1D5DB",   // Cinza nítido (gray-300) para descrições longas
+      accentText: "#FDE047",      // Amarelo mais claro para destacar cargos sem sumir no fundo
+      glow: "bg-yellow-500/10 blur-3xl",
     },
   };
 
