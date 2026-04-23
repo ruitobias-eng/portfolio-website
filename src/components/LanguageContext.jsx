@@ -20,6 +20,26 @@ const translations = {
       projects: 'Projetos',
       automation: 'Automação'
     },
+    // === NOVA SEÇÃO COMPARATIVA ===
+    comparison: {
+      badge: 'A EVOLUÇÃO',
+      title: 'Indústria 4.0 vs',
+      titleHighlight: '5.0',
+      description: 'A Indústria 5.0 não substitui a 4.0, mas a complementa, utilizando tecnologias digitais para propósitos mais amplos e humanos.',
+      headers: {
+        feature: 'Característica',
+        v4: 'Indústria 4.0',
+        v5: 'Indústria 5.0 (DibiTech)'
+      },
+      items: [
+        { f: "Foco Principal", v4: "Eficiência e Automação Total", v5: "Bem-estar Humano e Sustentabilidade" },
+        { f: "Papel do Humano", v4: "Substituição por Máquinas", v5: "Colaboração com Cobots e Criatividade" },
+        { f: "Tecnologia", v4: "Big Data e Sistemas Ciberfísicos", v5: "Sistemas Ciber-cognitivos e IA Ética" },
+        { f: "Produção", v4: "Produção em Massa", v5: "Hiper-personalização e Experiência" },
+        { f: "Objetivo", v4: "Produtividade", v5: "Resiliência e Propósitos Humanos" }
+      ],
+      footerNote: '"A Indústria 5.0 utiliza a tecnologia para potencializar a criatividade humana, não para substituí-la."'
+    },
     services: {
       badge: 'SERVIÇOS ESPECIALIZADOS',
       title: 'Soluções Completas em',
@@ -143,7 +163,7 @@ const translations = {
       company: 'Empresa',
       companyList: ['Equipe', 'Contato'],
       contactTitle: 'Contato',
-      rights: '© 2026 Rui & Rodrigo. Todos os direitos reservados.'
+      rights: '© 2026 DibiTech TI e Automação. Todos os direitos reservados.'
     }
   },
   en: {
@@ -164,6 +184,25 @@ const translations = {
       industry: 'INDUSTRY 5.0',
       projects: 'Projects',
       automation: 'Automation'
+    },
+    comparison: {
+      badge: 'THE EVOLUTION',
+      title: 'Industry 4.0 vs',
+      titleHighlight: '5.0',
+      description: 'Industry 5.0 does not replace 4.0, but complements it, using digital technologies for broader and human purposes.',
+      headers: {
+        feature: 'Feature',
+        v4: 'Industry 4.0',
+        v5: 'Industry 5.0 (DibiTech)'
+      },
+      items: [
+        { f: "Main Focus", v4: "Efficiency and Total Automation", v5: "Human Well-being and Sustainability" },
+        { f: "Human Role", v4: "Replacement by Machines", v5: "Collaboration with Cobots and Creativity" },
+        { f: "Technology", v4: "Big Data and Cyber-physical Systems", v5: "Cyber-cognitive Systems and Ethical IA" },
+        { f: "Production", v4: "Mass Production", v5: "Hyper-personalization and Experience" },
+        { f: "Goal", v4: "Productivity", v5: "Resilience and Human Purpose" }
+      ],
+      footerNote: '"Industry 5.0 uses technology to enhance human creativity, not to replace it."'
     },
     services: {
       badge: 'SPECIALIZED SERVICES',
@@ -288,7 +327,7 @@ const translations = {
       company: 'Company',
       companyList: ['Team', 'Contact'],
       contactTitle: 'Contact',
-      rights: '© 2026 Rui & Rodrigo. All rights reserved.'
+      rights: '© 2026 DibiTech TI e Automação. All rights reserved.'
     }
   },
   es: {
@@ -310,8 +349,27 @@ const translations = {
       projects: 'Proyectos',
       automation: 'Automatización'
     },
+    comparison: {
+      badge: 'LA EVOLUCIÓN',
+      title: 'Industria 4.0 vs',
+      titleHighlight: '5.0',
+      description: 'La Industria 5.0 no reemplaza a la 4.0, sino que la complementa, utilizando tecnologías digitales para propósitos más amplios y humanos.',
+      headers: {
+        feature: 'Característica',
+        v4: 'Industria 4.0',
+        v5: 'Industria 5.0 (DibiTech)'
+      },
+      items: [
+        { f: "Enfoque Principal", v4: "Eficiencia y Automatización Total", v5: "Bienestar Humano y Sostenibilidad" },
+        { f: "Papel del Humano", v4: "Sustitución por Máquinas", v5: "Colaboración con Cobots y Creatividad" },
+        { f: "Tecnología", v4: "Big Data y Sistemas Ciberfísicos", v5: "Sistemas Ciber-cognitivos e IA Ética" },
+        { f: "Producción", v4: "Producción en Masa", v5: "Hiper-personalización y Experiencia" },
+        { f: "Objetivo", v4: "Productividad", v5: "Resiliencia y Propósitos Humanos" }
+      ],
+      footerNote: '"La Industria 5.0 utiliza la tecnología para potenciar la creatividad humana, no para reemplazarla."'
+    },
     services: {
-      badge: 'SERVICIOS ESPECIALIZADOS',
+      badge: 'SERVIÇOS ESPECIALIZADOS',
       title: 'Soluciones Completas en',
       titleHighlight: 'Automatización',
       description: 'Ofrecemos una amplia gama de servicios especializados en ingeniería de automatización, diseñados para satisfacer las necesidades específicas de su negocio.',
@@ -370,24 +428,24 @@ const translations = {
       badge: 'PROYECTOS REALIZADOS',
       title: 'Casos de',
       titleHighlight: 'Éxito',
-      description: 'Conozca algunos de nuestros proyectos más recientes y vea cómo transformamos desafíos en resultados tangibles.',
+      description: 'Conozca algunos de nuestros proyectos más recientes y vea cómo transformamos desafíos en resultados tangíveis.',
       items: [
         {
           title: 'Automatización de Línea de Producción',
           client: 'Industria Alimenticia',
-          description: 'Implementación de sistema completo de automatización para línea de producción, resultando en 30% de aumento en la capacidad productiva.',
-          result: '+30% productividad'
+          description: 'Implementación de sistema completo de automatización para línea de producción, resultando em 30% de aumento na capacidade produtiva.',
+          result: '+30% produtividade'
         },
         {
           title: 'Sistema de Control de Agua',
           client: 'Estación de Tratamiento',
-          description: 'Modernización del sistema de control con reducción del 25% en el consumo de energía y mejora en la calidad del agua tratada.',
-          result: '-25% energía'
+          description: 'Modernização do sistema de controle com redução do 25% no consumo de energia e melhoria na qualidade da água tratada.',
+          result: '-25% energia'
         },
         {
           title: 'Automatización Predial Inteligente',
-          client: 'Edificio Comercial',
-          description: 'Sistema BMS integrado para control de iluminación, climatización y seguridad, con ahorro del 40% en el consumo energético.',
+          client: 'Edifício Comercial',
+          description: 'Sistema BMS integrado para controle de iluminação, climatização e segurança, com economia de 40% no consumo energético.',
           result: '-40% consumo'
         }
       ]
@@ -427,93 +485,52 @@ const translations = {
         'Automatización de Procesos',
         'Desarrollo de Sistemas',
         'Infraestructura de TI',
-        'Ciencia de Datos y ML',
-        'Educación y Capacitación'
+        'Ciência de Dados e ML',
+        'Educação e Treinamento'
       ],
       company: 'Empresa',
       companyList: ['Equipo', 'Contacto'],
       contactTitle: 'Contacto',
-      rights: '© 2026 Rui & Rodrigo. Todos los derechos reservados.'
+      rights: '© 2026 DibiTech TI e Automação. Todos los derechos reservados.'
     }
   }
 };
 
-// =======================
-// 🎨 Criação do contexto
-// =======================
 const LanguageContext = createContext();
 
 export function LanguageProvider({ children }) {
-  // 🔤 Idioma
+  // 1. Idioma com persistência
   const [language, setLanguage] = useState(() => {
-    const saved = localStorage.getItem("dibitech-language");
-    return saved || "pt";
+    return localStorage.getItem("dibitech-language") || "pt";
   });
 
-  // 🎨 Tema (light | dark | system)
+  // 2. Tema: Inicia baseado no navegador, sem opção 'system' no botão
   const [theme, setTheme] = useState(() => {
-    const savedTheme = localStorage.getItem("dibitech-theme");
-    return savedTheme || "system";
+    const saved = localStorage.getItem("dibitech-theme");
+    if (saved) return saved;
+    // Se não houver salvo, detecta navegador
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
   });
 
-  // =======================
-  // 🌗 Funções do Tema
-  // =======================
-  const applyTheme = (selectedTheme) => {
+  // Efeito para aplicar classes ao HTML e persistir
+  useEffect(() => {
     const root = window.document.documentElement;
     root.classList.remove("light", "dark");
-
-    if (selectedTheme === "system") {
-      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      root.classList.add(prefersDark ? "dark" : "light");
-    } else {
-      root.classList.add(selectedTheme);
-    }
-  };
-
-  useEffect(() => {
-    applyTheme(theme);
+    root.classList.add(theme);
     localStorage.setItem("dibitech-theme", theme);
+    localStorage.setItem("dibitech-language", language);
+  }, [theme, language]);
 
-    // Detecta mudanças no sistema
-    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-    const handleChange = () => {
-      if (theme === "system") applyTheme("system");
-    };
-
-    mediaQuery.addEventListener("change", handleChange);
-    return () => mediaQuery.removeEventListener("change", handleChange);
-  }, [theme]);
-
-  // Alterna manualmente entre dark/light
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
-  };
-
-  // =======================
-  // 💬 Traduções
-  // =======================
   const t = translations[language];
 
-  // Função segura para acessar caminhos
-  const getTranslation = (path) => {
-    const keys = path.split(".");
-    return keys.reduce((acc, key) => acc?.[key], t) ?? path;
-  };
-
-  // =======================
-  // 🔁 Retorno do Provider
-  // =======================
   return (
     <LanguageContext.Provider
       value={{
         language,
         setLanguage,
         t,
-        getTranslation,
         theme,
         setTheme,
-        toggleTheme,
       }}
     >
       {children}
@@ -523,8 +540,6 @@ export function LanguageProvider({ children }) {
 
 export function useLanguage() {
   const context = useContext(LanguageContext);
-  if (!context) {
-    throw new Error("useLanguage must be used within LanguageProvider");
-  }
+  if (!context) throw new Error("useLanguage must be used within LanguageProvider");
   return context;
 }

@@ -3,6 +3,7 @@ import { LanguageProvider } from '@/components/LanguageContext';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import Services from '@/components/Services';
+import IndustryComparison from '@/components/IndustryComparison';
 import Team from '@/components/Team';
 import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
@@ -15,6 +16,7 @@ export default function Home() {
         <Navbar />
         <Hero />
         <Services />
+        <IndustryComparison />
         <Team />
         <Projects />
         <Contact />
